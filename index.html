@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <center>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" placeholder="0" id="result">
+            </div>
+            <div class="buttons">
+                <b><input type="button" onclick="clearbox()" value="AC" id="clear"></b>
+    
+                <b><input type="button" onclick=" removeitem()" value="Del" id="erase"></b>
+    
+                <input type="button" onclick="displaynum('/')" value="/" class="input-button">
+    
+                <input type="button" onclick="displaynum('*')" value="*" class="input-button">
+    
+                <input type="button" onclick="displaynum('7')" value="7" class="input-button">
+    
+                <input type="button" onclick="displaynum('8')" value="8" class="input-button">
+    
+                <input type="button" onclick="displaynum('9')" value="9" class="input-button">
+    
+                <input type="button" onclick="displaynum('-')" value="-" class="input-button">
+    
+                <input type="button" onclick="displaynum('6')"value="6" class="input-button" />
+
+                <input type="button" onclick="displaynum('5')" value="5" class="input-button" />
+
+                <input type="button" onclick="displaynum('4')" value="4" class="input-button" />
+
+                <input type="button" onclick="displaynum('+')"value="+" class="input-button" />
+        
+                <input type="button" onclick="displaynum('1')" value="1" class="input-button" />
+
+                <input type="button" onclick="displaynum('2')" value="2" class="input-button" />
+
+                <input type="button" onclick="displaynum('3')" value="3" class="input-button" />
+        
+                <input type="button" onclick="evaluateExpr()"  value="=" id="equal" />
+
+                <input type="button" onclick="displaynum('0')" value="0" id="zero" class="input-button" />
+
+                <input type="button" onclick="displaynum('.')" value="." class="input-button" />
+                 
+    
+            </div>
+        </div>
+    </center>
+</body>
+
+<script src="./calc.js"></script>
+
+</html>
